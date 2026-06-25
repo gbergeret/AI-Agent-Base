@@ -3,16 +3,15 @@
 The startup routine. Read this first, on every session.
 
 ## First run: the welcome wizard
-On the first session, if `playbooks/000-welcome-wizard.md` exists and the name
-under "About you" in `MEMORY.md` is still the placeholder, run that playbook
-before anything else. It onboards you, then deletes itself, so this happens only
-once.
+On the first session, if `playbooks/000-welcome-wizard.md` exists and the name in
+`context/PROFILE.md` is not set yet, run that playbook before anything else. It
+onboards you, then deletes itself, so this happens only once.
 
 ## Load on every session
-1. `MEMORY.md`: what you have learned about me and the work in flight.
-2. `context/VOICE.md`: how I want you to write and talk to me.
-
-Use both to shape every response.
+1. `MEMORY.md`: what you have learned and the work in flight.
+2. `context/INDEX.md`: the map of context. Load the context files a task needs
+   from there (for example `context/VOICE.md` to write, `context/PROFILE.md` to
+   recall who the user is), rather than loading everything every time.
 
 ## Playbooks
 Playbooks in `playbooks/` are saved procedures. Some run on demand: when the
