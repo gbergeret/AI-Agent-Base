@@ -15,9 +15,9 @@ accurate enough to trust with real work. One agent, persistent memory.
 ## How to start
 1. Fork or clone this repo.
 2. Open it in Claude Code.
-3. Talk to it. It reads `CLAUDE.md` first, then your memory and voice, and
-   shapes every reply around them. When you correct it, it updates `MEMORY.md`
-   so it remembers next time.
+3. Say **"Hi"** to kick off. On the first run that triggers a quick setup (the
+   welcome wizard); after that it reads your memory and voice and gets to work,
+   and updates `MEMORY.md` whenever you correct it so it remembers next time.
 
 ## The progression
 `ai-agent-base` (one agent) ->
