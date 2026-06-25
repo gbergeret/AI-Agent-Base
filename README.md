@@ -21,6 +21,35 @@ accurate enough to trust with real work. One agent, persistent memory.
    welcome wizard); after that it reads your memory and context and gets to work,
    and updates `MEMORY.md` whenever you correct it so it remembers next time.
 
+## Concepts in this repo
+- **Written memory** (`MEMORY.md`) — the agent records what it learns and reads
+  it back every session, so it stops forgetting.
+- **Written context, loaded on demand** (`context/` + `context/INDEX.md`) — who
+  you are (`PROFILE.md`) and how to write (`VOICE.md`), pulled in only when a
+  task needs them rather than all at once.
+- **The startup routine** (`CLAUDE.md`) — the first thing read every session; it
+  says what to load and how to behave.
+- **Playbooks** (`playbooks/`) — saved procedures run on a trigger word: the
+  first-run welcome wizard, plus `save` and `reload`.
+- **First-run onboarding** — the welcome wizard interviews you once, writes your
+  answers into `PROFILE.md` / `VOICE.md`, then removes itself.
+- **Git as the store** — everything is plain Markdown in git: diffable,
+  revertable, and yours, with no hidden state and models you can swap freely.
+
+## Claude Code files (and Codex equivalents)
+Almost everything here is plain Markdown that any agent runner reads because the
+startup file points it there, so it copies to other tools unchanged. The only
+genuinely Claude Code-specific file is the startup file itself:
+
+| This repo (Claude Code) | Codex equivalent |
+|---|---|
+| `CLAUDE.md` (auto-loaded startup file) | `AGENTS.md` |
+
+`MEMORY.md`, `context/`, and `playbooks/` are not platform features, they are
+conventions in plain Markdown (playbooks are just SOPs written down, not the
+Claude "skills" feature). Copy them to Codex as-is and have `AGENTS.md` point at
+them the same way `CLAUDE.md` does here.
+
 ## The progression
 `ai-agent-base` (one agent) ->
 [`ai-team-base`](https://github.com/gbergeret/ai-team-base) (a team with a
