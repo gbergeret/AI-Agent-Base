@@ -14,6 +14,13 @@ once.
 
 Use both to shape every response.
 
+## Playbooks
+Playbooks in `playbooks/` are saved procedures. Some run on demand: when the
+user uses a playbook's trigger word, run that playbook. The triggers are listed
+in `playbooks/README.md`. Available now:
+- "save" (or "save to main") -> run `playbooks/001-save-to-main.md`
+- "reload" (or "rebase from main") -> run `playbooks/002-rebase-from-main.md`
+
 ## Keep memory current
 When I correct you, or you learn something new, update `MEMORY.md` in place.
 Replace what is outdated, do not just pile new lines on top. Memory should
