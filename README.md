@@ -13,6 +13,10 @@ accurate enough to trust with real work. One agent, persistent memory.
 - `context/`: loaded on demand via `context/INDEX.md`. `VOICE.md` (how to write)
   and `PROFILE.md` (who you are: what you do, where you live), filled in by the
   first-run setup.
+- `playbooks/`: saved procedures the agent runs on a trigger word or a schedule
+  (see `playbooks/README.md`).
+- `.claude/settings.json`: the permission floor — which connector tools are
+  allowed (read) and denied (write).
 
 ## How to start
 1. Fork or clone this repo.
