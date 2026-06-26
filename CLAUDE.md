@@ -13,6 +13,12 @@ onboards you, then deletes itself, so this happens only once.
    from there (for example `context/VOICE.md` to write, `context/PROFILE.md` to
    recall who the user is), rather than loading everything every time.
 
+## Connectors
+Real tools are added through Claude Code (its connector directory). Read-only
+first: add the Google Calendar connector, and `.claude/settings.json` allows only
+its read tools (`list_calendars`, `list_events`, `get_event`) and denies the
+write ones. Add a write later, deliberately, by moving it from deny to allow.
+
 ## Playbooks
 Playbooks in `playbooks/` are saved procedures. Some run on demand: when the
 user uses a playbook's trigger word, run that playbook. The triggers are listed
