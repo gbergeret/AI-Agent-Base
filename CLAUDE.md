@@ -22,11 +22,12 @@ its read tools (`list_calendars`, `list_events`, `get_event`) and denies the
 write ones. Add a write later, deliberately, by moving it from deny to allow.
 
 ## Playbooks
-Playbooks in `playbooks/` are saved procedures. Some run on demand: when the
-user uses a playbook's trigger word, run that playbook. The triggers are listed
-in `playbooks/README.md`. Available now:
+Playbooks in `playbooks/` are saved procedures. Some run on demand (when the user
+uses a trigger word), some run on a schedule (a Cadence). The list lives in
+`playbooks/README.md`. Available now:
 - "save" (or "save to main") -> run `playbooks/001-save-to-main.md`
 - "reload" (or "rebase from main") -> run `playbooks/002-rebase-from-main.md`
+- daily (scheduled) -> run `playbooks/003-daily-summary.md`: a morning calendar briefing.
 
 ## Keep memory current
 When I correct you, or you learn something new, update `MEMORY.md` in place.
