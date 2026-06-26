@@ -29,8 +29,10 @@ accurate enough to trust with real work. One agent, persistent memory.
   task needs them rather than all at once.
 - **The startup routine** (`CLAUDE.md`) — the first thing read every session; it
   says what to load and how to behave.
-- **Playbooks** (`playbooks/`) — saved procedures run on a trigger word: the
-  first-run welcome wizard, plus `save` and `reload`.
+- **Playbooks** (`playbooks/`) — saved procedures with a trigger: some run on a
+  word (the first-run welcome wizard, plus `save` and `reload`), and some run on a
+  **schedule** — the daily summary, a read-only morning briefing built from your
+  Google Calendar.
 - **First-run onboarding** — the welcome wizard interviews you once, writes your
   answers into `PROFILE.md` / `VOICE.md`, then removes itself.
 - **Governance** (`context/GOLDEN-RULES.md`) — a short constitution loaded first
