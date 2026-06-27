@@ -1,8 +1,9 @@
-# ai-agent-base
+# AI-Agent-Demo
 
-> Workshop 1: your first AI agent, with a memory.
+> A demo repo — your first AI agent, with a memory.
 
-The seed of the whole approach. A single, general-purpose AI agent that
+A public demo repo, illustrative rather than workshop courseware. The seed of the
+whole approach: a single, general-purpose AI agent that
 remembers, because its memory and context live in plain Markdown files,
 versioned in git. That is what turns a forgetful chatbot into an assistant
 accurate enough to trust with real work. One agent, persistent memory.
@@ -86,8 +87,15 @@ Claude "skills" feature). Copy them to Codex as-is and have `AGENTS.md` point at
 them the same way `CLAUDE.md` does here.
 
 ## The progression
-`ai-agent-base` (one agent) ->
-[`ai-team-base`](https://github.com/gbergeret/ai-team-base) (a team with a
+`AI-Agent-Demo` (one agent) ->
+[`AI-Team-Demo`](https://github.com/gbergeret/AI-Team-Demo) (a team with a
 router) ->
-[`ai-teams-base`](https://github.com/gbergeret/ai-teams-base) (an organisation of
+[`AI-Teams-Demo`](https://github.com/gbergeret/AI-Teams-Demo) (an organisation of
 teams). This is step 1.
+
+Alongside the ladder,
+[`AI-Engineering-Team-Demo`](https://github.com/gbergeret/AI-Engineering-Team-Demo)
+is the hands-on engineering team the organisation's CTO delegates the building to.
+
+## License
+[MIT](LICENSE) © 2026 GBergeret Cloud Services
